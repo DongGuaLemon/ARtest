@@ -19,12 +19,11 @@
     <a-scene embedded arjs='sourceType: webcam;debugUIEnabled: false;'>
 		<!-- <a-box position='0 0.5 0' material='opacity: 0.5;'></a-box> -->
         <!-- <a-marker-camera preset='hiro'></a-marker-camera> -->
-        <a-entity gltf-model="url(res/scene.gltf)"></a-entity>
-        <a-marker-camera preset='hiro'></a-marker-camera>
+        <a-marker-camera preset='hiro'>
             <!-- <a-entity position='-3 2 0' text="width: 5; value:Boat."></a-entity>  -->
-            
-        
-            <!-- <a-entity camera></a-entity> -->
+            <a-entity gltf-model="url(res/scene.gltf)"></a-entity> 
+        </a-marker-camera>
+            <a-entity camera></a-entity>
 	</a-scene>
 </body>
 
