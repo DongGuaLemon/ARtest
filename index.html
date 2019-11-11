@@ -21,10 +21,13 @@
         <!-- <a-marker-camera preset='hiro'></a-marker-camera> -->
         <a-marker type='pattern' url='res/pattern-marker.patt'>
             <!-- <a-entity position='-3 2 0' text="width: 5; value:Boat."></a-entity>  -->
-            <a-entity position='1 -6 -12' gltf-model="url(res/scene.gltf)"></a-entity> 
+            <a-entity
+             obj-model="obj: url(./res/Boat.obj); 
+             mtl: url(./res/Boat.mtl)">
+            </a-entity> 
         </a-marker>
             <a-entity camera></a-entity>
 	</a-scene>
 </body>
-
+<!-- position='1 -6 -12' gltf-model="url(res/scene.gltf)" -->
 </html>
